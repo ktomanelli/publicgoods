@@ -1,0 +1,151 @@
+.grid {
+  display: grid;
+  gap: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.links {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 10vw 10vw 10vw 10vw;
+}
+.utils {
+  margin-left: 10vw;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 8vw 8vw 8vw 8vw;
+  align-content: space-around;
+}
+nav {
+  grid-template-columns: 1fr auto 1fr;
+}
+#logo {
+  margin: 0;
+  padding-left: auto;
+  padding-right: auto;
+  max-width: 10vw;
+}
+
+#first {
+  background-image: url(assets/menstraul-hero_desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 7vw;
+}
+
+#second {
+  color: white;
+  background-image: url(assets/bamboo_desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5%;
+  padding-left: 35%;
+  padding-right: 35%;
+}
+#third {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+#pad1 {
+  background-image: url(assets/pad_detail_desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2em;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+#pad2 {
+  background-image: url(assets/pad_in_hand_desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2em;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+#fourth {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}
+#products {
+  gap: 2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.item img {
+  object-fit: cover;
+  width: 100%;
+}
+#shopnow {
+  margin: 3em;
+  margin-left: auto;
+  margin-right: auto;
+}
+#fifth {
+  background-image: url(assets/new-to-public-goods_desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#newtopg {
+  padding: 4em;
+}
+#newtopg img {
+  object-fit: cover;
+  width: 100%;
+}
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: white;
+  background: black;
+}
+@media screen and (max-width: 600px) {
+  #first {
+    background-image: url(assets/menstrual-hero_mobile.jpg);
+    padding: 30vw;
+    grid-template-columns: none;
+  }
+  #second {
+    background-image: url(assets/bamboo_mobile.jpg);
+  }
+  #third {
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
+  }
+  #pad1 {
+    background-image: url(assets/pad_detail_mobile.jpg);
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
+  }
+  #pad2 {
+    background-image: url(assets/pad_in_hand_mobile.jpg);
+    grid-template-columns: none;
+  }
+  #fourth {
+    grid-template-columns: none;
+  }
+  #products {
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  #fifth {
+    background-image: url(assets/new-to-public-goods_mobile.jpg);
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  #newtopg {
+    padding: 0;
+  }
+}
